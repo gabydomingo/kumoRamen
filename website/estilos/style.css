@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Font+Awesome+5+Free:wght@400;700&display=swap');
+
+
+*{ 
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.entero{
+    background-color: #F2E5D5;
+    padding-top: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Estilos del header */
+.encabezado{
+    font-weight: 700;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-style: normal;
+    background-color: #F2E5D5;
+}
+
+
+.encabezado img{
+    width: 80px;
+}
+
+.separacion{
+    border: none;
+    height: 2px;
+    background-color: #D9564A; 
+    width: 35%; 
+    margin: 20px 0; 
+}
+
+/* Estilos para hacer el subrayado del hader con el hover (no pude hacer que quede marcado cuando saco el mouse) */
+.encabezado .navbar-nav .nav-link{
+    padding-bottom: 5px;
+}
+  
+.encabezado .navbar-nav .nav-link:hover{
+    border-bottom: 2px solid #D9564A;
+}
+  
+.encabezado .navbar-nav .nav-link.active{
+    border-bottom: 2px solid #D9564A; 
+}
+
+/* Estilo del texto en japones */
+
+.tituloJapones{
+    text-align: left;
+    margin-left: 0; 
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #D9564A;
+}
+
+/* titulo del home h2 */
+.titleP2{
+    color: #D9564A;
+}
+
+/* posicion del cuerpo\\ */
+.cuerpo{
+    padding: 250px 150px;
+   
+}
+
+/* hago space-between para acomodar el contenido del cuerpo en una misma linea y poder moverlos star y end */
+/* .content{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; 
+} */
+
+.reglon{
+    border: none; 
+    height: 2px;  
+    background-color: #D9564A; 
+    width: 35%; 
+    margin: 20px 0; 
+}
+
+.textoCuerpo{
+    width: 35%;
+}
+
+/* Estilos para la imagen */
+.imgRamen{
+    width: 45%;
+    float: right;
+    margin-top: -35%;
+}
+
+
+
+
+/* estilos de la reserva */
+
+.form-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 1rem;
+    max-width: 150px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    color: #555;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+input[type="number"],
+input[type="tel"],
+input[type="text"],
+input[type="date"],
+input[type="time"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+    /* calendario */
+
+    #calendar {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 10px;
+    }
+    
+    .day {
+        padding: 20px;
+        border: 1px solid #ccc;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .reserved {
+        background-color: #ffcccc;
+    }
+
+    /* Estilos para la tabla de reservas */
+#reservasTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#reservasTable thead {
+    background-color: #D9564A;
+    color: #F2E5D5;
+}
+
+#reservasTable thead tr th {
+    padding: 12px 15px;
+    text-align: left;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    border-bottom: 2px solid #C0392B;
+}
+
+#reservasTable tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+#reservasTable tbody tr:nth-child(even) {
+    background-color: #f9f5f1;
+}
+
+#reservasTable tbody tr:hover {
+    background-color: #f1e6d8;
+}
+
+#reservasTable tbody td {
+    padding: 10px 15px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: #333;
+}
+
+/* Estilos para los botones de DataTables */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #D9564A;
+    color: #F2E5D5 !important;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: #C0392B;
+    color: #ffffff !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: #C0392B;
+    color: #ffffff !important;
+}
+
+/* Estilos para el input de búsqueda */
+.dataTables_wrapper .dataTables_filter input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+
+/*  */
+.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.content-wrapper {
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+/*  */
+
+.admin-table-container {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.admin-table-title {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#reservasTable {
+    width: 100% !important;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#reservasTable thead {
+    background-color: #343a40;
+    color: #fff;
+}
+
+#reservasTable thead th {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    border: none;
+}
+
+#reservasTable tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+#reservasTable tbody tr:hover {
+    background-color: rgba(0,123,255,0.1);
+}
+
+#reservasTable tbody td {
+    padding: 12px 15px;
+    vertical-align: middle;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.btn-edit, .btn-delete {
+    padding: 6px 12px;
+    margin-right: 5px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.btn-edit {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-edit:hover, .btn-delete:hover {
+    opacity: 0.8;
+}
+
+/* Estilos para el tablero de edición */
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.modal-title {
+    font-weight: bold;
+    color: #343a40;
+}
+
+.modal-body label {
+    font-weight: 600;
+    color: #495057;
+}
+
+/*  */
+
