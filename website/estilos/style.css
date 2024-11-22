@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Font+Awesome+5+Free:wght@400;700&display=swap'); /* Importa la fuente de Font Awesome */
+
+/* Reset de estilos básicos */
+* { 
+    padding: 0%; /* Elimina el padding por defecto */
+    margin: 0%; /* Elimina el margen por defecto */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del elemento */
+}
+
+/* Estilo del contenedor principal */
+.entero {
+    background-color: #F2E5D5; /* Color de fondo */
+    padding-top: 100px; /* Espacio superior */
+    background-size: cover; /* Cubre todo el fondo */
+    background-repeat: no-repeat; /* No repite la imagen de fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    background-attachment: fixed; /* Fija la imagen de fondo al hacer scroll */
+}
+
+/* Estilos del header */
+.encabezado {
+    font-weight: 700; /* Peso de la fuente */
+    font-family: "Be Vietnam Pro", sans-serif; /* Fuente del encabezado */
+    font-style: normal; /* Estilo normal */
+    background-color: #F2E5D5; /* Color de fondo del encabezado */
+}
+
+.encabezado img {
+    width: 80px; /* Ancho de la imagen en el encabezado */
+}
+
+/* Separador */
+.separacion {
+    border: none; /* Sin borde */
+    height: 2px; /* Altura del separador */
+    background-color: #D9564A; /* Color del separador */
+    width: 35%; /* Ancho del separador */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+/* Estilos para el subrayado del header con hover */
+.encabezado .navbar-nav .nav-link {
+    padding-bottom: 5px; /* Espacio inferior en los enlaces del navbar */
+}
+
+.encabezado .navbar-nav .nav-link:hover {
+    border-bottom: 2px solid #D9564A; /* Subrayado al pasar el mouse */
+}
+
+.encabezado .navbar-nav .nav-link.active {
+    border-bottom: 2px solid #D9564A; /* Subrayado para el enlace activo */
+}
+
+/* Estilo del texto en japonés */
+.tituloJapones {
+    text-align: left; /* Alineación a la izquierda */
+    margin-left: 0; /* Sin margen izquierdo */
+    font-family: "Noto Sans JP", sans-serif; /* Fuente para texto japonés */
+    font-optical-sizing: auto; /* Ajuste automático del tamaño de la fuente */
+    font-weight: 400; /* Peso de la fuente */
+    font-style: normal; /* Estilo normal */
+    color: #D9564A; /* Color del texto */
+}
+
+/* Título del home h2 */
+.titleP2 {
+    color: #D9564A; /* Color del título */
+}
+
+/* Posicionamiento del cuerpo */
+.cuerpo {
+    padding: 250px 150px; /* Espaciado superior/inferior y lateral */
+}
+
+/* Separador */
+.reglon {
+    border: none; /* Sin borde */
+    height: 2px; /* Altura del separador */
+    background-color: #D9564A; /* Color del separador */
+    width: 35%; /* Ancho del separador */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+.textoCuerpo {
+    width: 35%; /* Ancho del texto del cuerpo */
+}
+
+/* Estilos para la imagen */
+.imgRamen {
+    width: 45%; /* Ancho de la imagen */
+    float: right; /* Flota a la derecha */
+    margin-top: -35%; /* Margen superior negativo */
+}
+
+/* Estilos de la reserva */
+.form-container {
+    background-color: #ffffff; /* Color de fondo del contenedor */
+    padding: 2rem; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra del contenedor */
+    max-width: 500px; /* Ancho máximo */
+    width: 100%; /* Ancho completo */
+}
+
+.logo {
+    display: block; /* Muestra como bloque */
+    margin: 0 auto 1rem; /* Centra la imagen y margen inferior */
+    max-width: 150px; /* Ancho máximo de la imagen */
+}
+
+h1 {
+    text-align: center; /* Centra el texto */
+    color: #333; /* Color del texto */
+    margin-bottom: 1rem; /* Margen inferior */
+}
+
+form {
+    display: flex; /* Muestra el formulario como flexbox */
+    flex-direction: column; /* Coloca los elementos en columna */
+}
+
+fieldset {
+    border: 1px solid #ddd; /* Borde del fieldset */
+    padding: 1rem; /* Espaciado interno */
+    margin-bottom: 1rem; /* Margen inferior */
+}
+
+legend {
+    font-weight: bold; /* Peso de la fuente */
+    color: #555; /* Color del texto */
+}
+
+label {
+    display: block; /* Muestra las etiquetas como bloque */
+    margin-bottom: 0.5rem; /* Margen inferior */
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 0.5rem; /* Margen derecho */
+}
+
+input[type="number"],
+input[type="tel"],
+input[type="text"],
+input[type="date"],
+input[type="time"],
+textarea {
+    width: 100%; /* Ancho completo */
+    padding: 0.5rem; /* Espaciado interno */
+    margin-bottom: 1rem; /* Margen inferior */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+textarea {
+    height: 100px; /* Altura del textarea */
+}
+
+button {
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 0.75rem; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    font-size: 1rem; /* Tamaño de la fuente */
+}
+
+button:hover {
+    background-color: #45a049; /* Color de fondo al pasar el mouse */
+}
+
+p {
+    margin-top: 1rem; /* Margen superior */
+    margin-bottom: 0.5rem; /* Margen inferior */
+}
+
+a {
+    color: #4CAF50; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilos para el calendario */
+#calendar {
+    display: grid; /* Muestra el calendario como grid */
+    grid-template-columns: repeat(7, 1fr); /* 7 columnas */
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+.day {
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde */
+    text-align: center; /* Centra el texto */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.reserved {
+    background-color: #ffcccc; /* Color de fondo para días reservados */
+}
+
+/* Estilos para la tabla de reservas */
+#reservasTable {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsa los bordes */
+    margin-bottom: 20px; /* Margen inferior */
+    background-color: #ffffff; /* Color de fondo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra de la tabla */
+}
+
+#reservasTable thead {
+    background-color: #D9564A; /* Color de fondo del encabezado */
+    color: #F2E5D5; /* Color del texto del encabezado */
+}
+
+#reservasTable thead tr th {
+    padding: 12px 15px; /* Espaciado interno */
+    text-align: left; /* Alineación a la izquierda */
+    font-family: "Be Vietnam Pro", sans-serif; /* Fuente del encabezado */
+    font-weight: 600; /* Peso de la fuente */
+    border-bottom: 2px solid #C0392B; /* Borde inferior */
+}
+
+#reservasTable tbody tr {
+    border-bottom: 1px solid #ddd; /* Borde inferior */
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+#reservasTable tbody tr:nth-child(even) {
+    background-color: #f9f5f1; /* Color de fondo para filas pares */
+}
+
+#reservasTable tbody tr:hover {
+    background-color: #f1e6d8; /* Color de fondo al pasar el mouse */
+}
+
+#reservasTable tbody td {
+    padding: 10px 15px; /* Espaciado interno */
+    font-family: "Be Vietnam Pro", sans-serif; /* Fuente del cuerpo */
+    color: #333 ; /* Color del texto */
+}
+/* Estilos para los botones de DataTables */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 5px 10px; /* Espaciado interno */
+    margin: 0 5px; /* Margen lateral */
+    background-color: #D9564A; /* Color de fondo */
+    color: #F2E5D5 !important; /* Color del texto */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: #C0392B; /* Color de fondo al pasar el mouse */
+    color: #ffffff !important; /* Color del texto al pasar el mouse */
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: #C0392B; /* Color de fondo para el botón actual */
+    color: #ffffff !important; /* Color del texto para el botón actual */
+}
+
+/* Estilos para el input de búsqueda */
+.dataTables_wrapper .dataTables_filter input {
+    padding: 8px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    font-family: "Be Vietnam Pro", sans-serif; /* Fuente del input */
+}
+
+/* Estilos para el encabezado fijo */
+.fixed-top {
+    position: fixed; /* Fija el encabezado en la parte superior */
+    top: 0; /* Posición superior */
+    width: 100%; /* Ancho completo */
+    z-index: 1030; /* Z-index para superposición */
+}
+
+/* Estilos para el contenedor principal */
+.content-wrapper {
+    padding-top: 100px; /* Espaciado superior */
+    min-height: 100vh; /* Altura mínima */
+}
+
+/* Estilos para el contenedor de la tabla de administración */
+.admin-table-container {
+    background-color: #f8f9fa; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra */
+    padding: 20px; /* Espaciado interno */
+    margin-top: 30px; /* Margen superior */
+}
+
+.admin-table-title {
+    color: #333; /* Color del título */
+    margin-bottom: 20px; /* Margen inferior */
+    font-weight: bold; /* Peso de la fuente */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+/* Estilos para la tabla de reservas */
+#reservasTable {
+    width: 100% !important; /* Ancho completo */
+    border-collapse: separate; /* Colapsa los bordes */
+    border-spacing: 0; /* Espaciado entre celdas */
+}
+
+#reservasTable thead {
+    background-color: #343a40; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+}
+
+#reservasTable thead th {
+    padding: 12px 15px; /* Espaciado interno */
+    text-align: left; /* Alineación a la izquierda */
+    font-weight: 600; /* Peso de la fuente */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 0.7px; /* Espaciado entre letras */
+    border: none; /* Sin borde */
+}
+
+#reservasTable tbody tr {
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+#reservasTable tbody tr:hover {
+    background-color: rgba(0,123,255,0.1); /* Color de fondo al pasar el mouse */
+}
+
+#reservasTable tbody td {
+    padding: 12px 15px; /* Espaciado interno */
+    vertical-align: middle; /* Alineación vertical */
+    border-bottom: 1px solid #dee2e6; /* Borde inferior */
+}
+
+/* Estilos para los botones de edición y eliminación */
+.btn-edit, .btn-delete {
+    padding: 6px 12px; /* Espaciado interno */
+    margin-right: 5px; /* Margen derecho */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 0.8rem; /* Tamaño de la fuente */
+}
+
+.btn-edit {
+    background-color: #28a745; /* Color de fondo para editar */
+    color: white; /* Color del texto */
+}
+
+.btn .delete {
+    background-color: #dc3545; /* Color de fondo para eliminar */
+    color: white; /* Color del texto */
+}
+
+.btn-edit:hover, .btn-delete:hover {
+    opacity: 0.8; /* Efecto de opacidad al pasar el mouse */
+}
+
+/* Estilos para el encabezado del modal */
+.modal-header {
+    background-color: #f8f9fa; /* Color de fondo del encabezado del modal */
+    border-bottom: 1px solid #e9ecef; /* Borde inferior */
+}
+
+.modal-title {
+    font-weight: bold; /* Peso de la fuente */
+    color: #343a40; /* Color del texto */
+}
+
+.modal-body label {
+    font-weight: 600; /* Peso de la fuente */
+    color: #495057; /* Color del texto */
+}
+
+/* Estilos para la tarjeta de reseña */
+.card-container {
+    display: flex; /* Muestra las tarjetas como flexbox */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan */
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.card {
+    background-color: #fff; /* Color de fondo de la tarjeta */
+    border: 1px solid #ddd; /* Borde de la tarjeta */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    width: 300px; /* Ancho de la tarjeta */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+}
+
+.card-img {
+    max-width: 100%; /* Ancho máximo de la imagen de la tarjeta */
+    height: auto; /* Altura automática */
+    margin-top: 10px; /* Margen superior */
+}
+
+/* Estilos para la calificación con estrellas */
+star-rating {
+    direction: rtl; /* Para que las estrellas se seleccionen de derecha a izquierda */
+    display: inline-block; /* Muestra como bloque en línea */
+}
+
+.star {
+    font-size: 30px; /* Tamaño de las estrellas */
+    color: grey; /* Color por defecto de las estrellas */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.star-rating input:checked ~ .star {
+    color: gold; /* Color de las estrellas seleccionadas */
+}
+
+.star-rating input {
+    display: none; /* Oculta los radios */
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .tituloJapones {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    .textoCuerpo {
+        font-size: 16px;
+    }
+
+    .imgRamen img {
+        width: 80%; /* La imagen ocupa el 80% del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+}
+
+/* Estilos para pantallas grandes (portátiles y más) */
+@media (min-width: 901px) {
+    .tituloJapones {
+        font-size: 32px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    .textoCuerpo {
+        font-size: 18px;
+    }
+
+    .imgRamen img {
+        width: 60%; /* La imagen ocupa el 60% del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+}
